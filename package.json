@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kevinegstorf/reformer/issues"
   },
-  "homepage": "https://github.com/kevinegstorf/reformer#readme"
+  "homepage": "https://github.com/kevinegstorf/reformer#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
