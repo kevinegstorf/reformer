@@ -1,0 +1,19 @@
+{
+  "name": "reformer",
+  "version": "1.0.0",
+  "description": "node express react app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kevinegstorf/reformer.git"
+  },
+  "author": "Kevin Egstorf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinegstorf/reformer/issues"
+  },
+  "homepage": "https://github.com/kevinegstorf/reformer#readme"
+}
