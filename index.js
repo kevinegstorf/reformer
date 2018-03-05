@@ -5,6 +5,7 @@ const passport = require('passport');
 require('./models/User');
 require('./services/passport');
 const keys = require('./config/keys');
+const dev = require('./config/dev');
 
 mongoose.connect(keys.mongoURI);
 
