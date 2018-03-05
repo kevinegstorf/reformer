@@ -21,7 +21,7 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: 'https://stormy-earth-38978.herokuapp.com/auth/google/callback'
+      callbackURL: keys.address
     },
     function(accessToken, refreshToken, profile, done) {
       User.findOne({ googleId: profile.id }).then(existingUser => {
