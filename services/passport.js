@@ -15,6 +15,8 @@ passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
+console.log('clientID', keys.googleClientID);
+
 passport.use(
   new GoogleStrategy(
     {
