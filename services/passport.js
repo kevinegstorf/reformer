@@ -1,7 +1,8 @@
-const keys = require('../config/keys.js');
+const mongoose = require('mongoose');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const mongoose = require('mongoose');
+const cookieSession = require('cookie-session');
+const keys = require('../config/dev');
 
 const User = mongoose.model('users');
 
@@ -14,9 +15,6 @@ passport.deserializeUser((id, done) => {
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
-console.log('#####################################################');
-console.log('clientID', keys.googleClientID);
-console.log('#####################################################');
 
 passport.use(
   new GoogleStrategy(
