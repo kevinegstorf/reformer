@@ -3,7 +3,7 @@ module.exports = app => {
   app.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
   app.get('/auth/google/callback', passport.authenticate('google'), function(req, res) {
-    res.redirect('http://localhost:3000/surveys');
+    res.redirect('http://localhost:3000/searchjokes');
   });
 
   app.get('/api/logout', (req, res) => {

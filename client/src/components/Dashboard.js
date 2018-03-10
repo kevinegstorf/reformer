@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Jokes from './Jokes';
+import JokesList from './JokesList';
 
 class Dashboard extends Component {
   constructor(props, context) {
@@ -24,7 +24,7 @@ class Dashboard extends Component {
         <button className="btn-add" onClick={this.handleClick}>
           Render Jokes
         </button>
-        <ul>{this.state.active && <Jokes />}</ul>
+        <ul>{this.state.active && <JokesList />}</ul>
       </div>
     );
   }
